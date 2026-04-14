@@ -1,3 +1,19 @@
 name: deepfake-detector-mcp
-description: MEOK AI Labs - Udeepfake detector
+description: MEOK AI Labs - AI Governance & Compliance
 version: 1.0.0
+tools:
+- name: analyze_media
+  description: ''
+  parameters:
+  - name: filename
+    type: string
+    required: true
+  - name: file_size_mb
+    type: number
+    required: true
+- name: metadata_check
+  description: ''
+  parameters:
+  - name: metadata
+    type: object
+    required: true

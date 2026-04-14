@@ -1,6 +1,41 @@
 {
   "name": "deepfake-detector-mcp",
-  "description": "MEOK AI Labs Udeepfake detector",
+  "description": "MEOK AI Labs - AI Governance & Compliance",
   "version": "1.0.0",
-  "author": "MEOK AI Labs"
+  "tools": [
+    {
+      "name": "analyze_media",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string"
+          },
+          "file_size_mb": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "filename",
+          "file_size_mb"
+        ]
+      }
+    },
+    {
+      "name": "metadata_check",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "metadata"
+        ]
+      }
+    }
+  ]
 }
