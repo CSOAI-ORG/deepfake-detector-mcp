@@ -46,11 +46,11 @@ AUDIO_ARTIFACT_INDICATORS = {
     "room_tone_mismatch": "Room tone inconsistencies across segments",
 }
 
-mcp = FastMCP("deepfake-detector-mcp", instructions="Analyze images, videos, and audio for deepfake manipulation artifacts. Checks metadata, provenance chains, and synthesis indicators.")
+mcp = FastMCP("deepfake-detector", instructions="Analyze images, videos, and audio for deepfake manipulation artifacts. Checks metadata, provenance chains, and synthesis indicators.")
 
 
 @mcp.tool()
-async def detect_deepfake(filename: str, file_size_mb: float, metadata: str = "{}", api_key: str = "") -> str:
+def detect_deepfake(filename: str, file_size_mb: float, metadata: str = "{}", api_key: str = "") -> str:
     """Analyze image/video metadata and characteristics for manipulation indicators."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -156,7 +156,7 @@ async def detect_deepfake(filename: str, file_size_mb: float, metadata: str = "{
 
 
 @mcp.tool()
-async def analyze_audio_authenticity(duration_seconds: float, sample_rate: int = 44100, channels: int = 2, metadata: str = "{}", api_key: str = "") -> str:
+def analyze_audio_authenticity(duration_seconds: float, sample_rate: int = 44100, channels: int = 2, metadata: str = "{}", api_key: str = "") -> str:
     """Check audio for synthesis artifacts and manipulation indicators."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -236,7 +236,7 @@ async def analyze_audio_authenticity(duration_seconds: float, sample_rate: int =
 
 
 @mcp.tool()
-async def check_image_provenance(filename: str, metadata: str = "{}", claimed_source: str = "", api_key: str = "") -> str:
+def check_image_provenance(filename: str, metadata: str = "{}", claimed_source: str = "", api_key: str = "") -> str:
     """Verify image source chain and provenance integrity."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -330,7 +330,7 @@ async def check_image_provenance(filename: str, metadata: str = "{}", claimed_so
 
 
 @mcp.tool()
-async def generate_authenticity_report(filename: str, file_size_mb: float, media_type: str = "image", metadata: str = "{}", api_key: str = "") -> str:
+def generate_authenticity_report(filename: str, file_size_mb: float, media_type: str = "image", metadata: str = "{}", api_key: str = "") -> str:
     """Generate a comprehensive authenticity report on content."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:

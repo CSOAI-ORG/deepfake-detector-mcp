@@ -1,11 +1,11 @@
 {
   "name": "deepfake-detector-mcp",
-  "description": "MEOK AI Labs - AI Governance & Compliance",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Analyze images, videos, and audio for deepfake manipulation artifacts. Checks metadata, provenance c",
   "version": "1.0.0",
   "tools": [
     {
-      "name": "analyze_media",
-      "description": "",
+      "name": "detect_deepfake",
+      "description": "Analyze image/video metadata and characteristics for manipulation indicators.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -14,6 +14,9 @@
           },
           "file_size_mb": {
             "type": "number"
+          },
+          "metadata": {
+            "type": "string"
           }
         },
         "required": [
@@ -23,17 +26,72 @@
       }
     },
     {
-      "name": "metadata_check",
-      "description": "",
+      "name": "analyze_audio_authenticity",
+      "description": "Check audio for synthesis artifacts and manipulation indicators.",
       "parameters": {
         "type": "object",
         "properties": {
+          "duration_seconds": {
+            "type": "number"
+          },
+          "sample_rate": {
+            "type": "integer"
+          },
+          "channels": {
+            "type": "integer"
+          },
           "metadata": {
-            "type": "object"
+            "type": "string"
           }
         },
         "required": [
-          "metadata"
+          "duration_seconds"
+        ]
+      }
+    },
+    {
+      "name": "check_image_provenance",
+      "description": "Verify image source chain and provenance integrity.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string"
+          },
+          "metadata": {
+            "type": "string"
+          },
+          "claimed_source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "filename"
+        ]
+      }
+    },
+    {
+      "name": "generate_authenticity_report",
+      "description": "Generate a comprehensive authenticity report on content.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string"
+          },
+          "file_size_mb": {
+            "type": "number"
+          },
+          "media_type": {
+            "type": "string"
+          },
+          "metadata": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "filename",
+          "file_size_mb"
         ]
       }
     }

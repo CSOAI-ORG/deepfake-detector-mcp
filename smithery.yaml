@@ -1,9 +1,10 @@
 name: deepfake-detector-mcp
-description: MEOK AI Labs - AI Governance & Compliance
+description: Analyze images, videos, and audio for deepfake manipulation artifacts.
+  Checks metadata, provenance c
 version: 1.0.0
 tools:
-- name: analyze_media
-  description: ''
+- name: detect_deepfake
+  description: Analyze image/video metadata and characteristics for manipulation indicators.
   parameters:
   - name: filename
     type: string
@@ -11,9 +12,48 @@ tools:
   - name: file_size_mb
     type: number
     required: true
-- name: metadata_check
-  description: ''
-  parameters:
   - name: metadata
-    type: object
+    type: string
+    required: false
+- name: analyze_audio_authenticity
+  description: Check audio for synthesis artifacts and manipulation indicators.
+  parameters:
+  - name: duration_seconds
+    type: number
     required: true
+  - name: sample_rate
+    type: integer
+    required: false
+  - name: channels
+    type: integer
+    required: false
+  - name: metadata
+    type: string
+    required: false
+- name: check_image_provenance
+  description: Verify image source chain and provenance integrity.
+  parameters:
+  - name: filename
+    type: string
+    required: true
+  - name: metadata
+    type: string
+    required: false
+  - name: claimed_source
+    type: string
+    required: false
+- name: generate_authenticity_report
+  description: Generate a comprehensive authenticity report on content.
+  parameters:
+  - name: filename
+    type: string
+    required: true
+  - name: file_size_mb
+    type: number
+    required: true
+  - name: media_type
+    type: string
+    required: false
+  - name: metadata
+    type: string
+    required: false
