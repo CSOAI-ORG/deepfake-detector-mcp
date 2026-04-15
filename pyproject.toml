@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "deepfake-detector-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — deepfake-detector-mcp"
+description = "AI-powered deepfake detector MCP server for agents. Supports detect deepfake, analyze audio authenticity, check image provenance. By MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]

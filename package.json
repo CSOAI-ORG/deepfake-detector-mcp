@@ -9,5 +9,6 @@
   },
   "dependencies": {
     "mcp": "^1.0.0"
-  }
+  },
+  "description": "AI-powered deepfake detector MCP server for agents. Supports detect deepfake, analyze audio authenticity, check image provenance. By MEOK AI Labs."
 }
