@@ -1,0 +1,10 @@
+{
+  "name": "deepfake-detector-mcp",
+  "description": "MEOK AI Labs \u2014 deepfake-detector-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/deepfake-detector-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}
