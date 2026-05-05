@@ -1,33 +1,38 @@
-# Deepfake Detector MCP Server
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Analyze images, videos, and audio for deepfake manipulation artifacts
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/deepfake-detector-mcp)](https://github.com/CSOAI-ORG/deepfake-detector-mcp/stargazers)
+
+# udeepfakeU detectorU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/deepfake-detector-mcp)](https://www.npmjs.com/package/@meok-ai/deepfake-detector-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/deepfake-detector-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install deepfake-detector-mcp
+# or
+npm install -g @meok-ai/deepfake-detector-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-This server analyzes media for manipulation artifacts including:
-
-- Image metadata and provenance analysis
-- Detection of synthetic software signatures (DeepFaceLab, FaceSwap, Stable Diffusion, Midjourney, DALL-E)
-- Camera manufacturer verification for legitimate provenance
-- Audio synthesis artifact detection (spectral gaps, phase discontinuity, formant regularity, breathing absence)
-- Room tone mismatch analysis
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
