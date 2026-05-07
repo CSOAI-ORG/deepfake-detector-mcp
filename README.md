@@ -1,3 +1,7 @@
+[![deepfake-detector-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/deepfake-detector-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/deepfake-detector-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
+[![PyPI](https://img.shields.io/pypi/v/deepfake-detector-mcp)](https://pypi.org/project/deepfake-detector-mcp/)
+
 [![deepfake-detector-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/deepfake-detector-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/deepfake-detector-mcp)
 
 <div align="center">
