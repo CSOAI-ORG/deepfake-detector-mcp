@@ -67,6 +67,13 @@ def detect_deepfake(filename: str, file_size_mb: float, metadata: str = "{}", ap
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        filename (str): The filename to analyze or process.
+        file_size_mb (float): The file size mb to analyze or process.
+        metadata (str): The metadata to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -203,6 +210,14 @@ def analyze_audio_authenticity(duration_seconds: float, sample_rate: int = 44100
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        duration_seconds (float): The duration seconds to analyze or process.
+        sample_rate (int): The sample rate to analyze or process.
+        channels (int): The channels to analyze or process.
+        metadata (str): The metadata to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -313,6 +328,13 @@ def check_image_provenance(filename: str, metadata: str = "{}", claimed_source: 
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        filename (str): The filename to analyze or process.
+        metadata (str): The metadata to analyze or process.
+        claimed_source (str): The claimed source to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -436,6 +458,14 @@ def generate_authenticity_report(filename: str, file_size_mb: float, media_type:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        filename (str): The filename to analyze or process.
+        file_size_mb (float): The file size mb to analyze or process.
+        media_type (str): The media type to analyze or process.
+        metadata (str): The metadata to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
