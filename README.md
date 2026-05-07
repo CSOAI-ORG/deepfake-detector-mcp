@@ -1,3 +1,5 @@
+[![deepfake-detector-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/deepfake-detector-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/deepfake-detector-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/deepfake-detector-mcp)](https://github.com/CSOAI-ORG/deepfake-detector-mcp/stargazers)
