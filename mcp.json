@@ -1,0 +1,10 @@
+{
+  "name": "Deepfake Detector",
+  "description": "AI-generated content detection, deepfake identification, and verification",
+  "vendor": "MEOK AI Labs",
+  "sourceUrl": "https://github.com/CSOAI-ORG/deepfake-detector-mcp",
+  "homepage": "https://meok.ai/mcp/deepfake-detector-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "server.py"
+}

@@ -1,0 +1,33 @@
+# deepfake-detector-mcp
+# **MCP server for deepfake detector mcp operations**
+
+## Install
+```bash
+pip install deepfake-detector-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `detect_deepfake`
+Analyze image/video metadata and characteristics for manipulation indicators.
+
+### `analyze_audio_authenticity`
+Check audio for synthesis artifacts and manipulation indicators.
+
+### `check_image_provenance`
+Verify image source chain and provenance integrity.
+
+### `generate_authenticity_report`
+Generate a comprehensive authenticity report on content.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

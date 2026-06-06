@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Deepfake Detector MCP Server - Analyze media for manipulation artifacts."""
+"""
+Deepfake Detector MCP Server - Analyze media for manipulation artifacts."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json, hashlib, time, struct, re
@@ -91,7 +91,7 @@ def detect_deepfake(filename: str, file_size_mb: float, metadata: str = "{}", ap
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if not _check_rate(api_key or "anon"):
         return json.dumps({"error": "Rate limit exceeded. Try again in 60 seconds."})
 
@@ -235,7 +235,7 @@ def analyze_audio_authenticity(duration_seconds: float, sample_rate: int = 44100
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if not _check_rate(api_key or "anon"):
         return json.dumps({"error": "Rate limit exceeded. Try again in 60 seconds."})
 
@@ -352,7 +352,7 @@ def check_image_provenance(filename: str, metadata: str = "{}", claimed_source: 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if not _check_rate(api_key or "anon"):
         return json.dumps({"error": "Rate limit exceeded. Try again in 60 seconds."})
 
@@ -483,7 +483,7 @@ def generate_authenticity_report(filename: str, file_size_mb: float, media_type:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if not _check_rate(api_key or "anon"):
         return json.dumps({"error": "Rate limit exceeded. Try again in 60 seconds."})
 
@@ -565,5 +565,8 @@ def generate_authenticity_report(filename: str, file_size_mb: float, media_type:
     })
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

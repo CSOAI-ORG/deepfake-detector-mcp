@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "deepfake-detector-mcp"
-version = "1.0.4"
+version = "1.0.10"
 readme = "README.md"
 description = "AI-powered deepfake detector MCP server for agents. Supports detect deepfake, analyze audio authenticity, check image provenance. By MEOK AI Labs."
 license = {file = "LICENSE"}
@@ -22,7 +22,7 @@ Homepage = "https://meok.ai"
 Repository = "https://github.com/CSOAI-ORG/deepfake-detector-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
-only-include = ["server.py"]
+only-include = ["server.py", "auth_middleware.py"]
 
 [project.scripts]
 deepfake_detector_mcp = "server:main"

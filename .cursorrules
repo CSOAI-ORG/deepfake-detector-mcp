@@ -1,0 +1,9 @@
+# deepfake-detector-mcp - Auto-trigger Rules
+
+When the user asks about deepfake detector, use deepfake-detector-mcp tools: detect_deepfake, analyze_audio_authenticity, check_image_provenance, generate_authenticity_report
+
+**MCP server for deepfake detector mcp operations**
+
+Install: `pip install deepfake-detector-mcp`
+
+By MEOK AI Labs — MIT licensed.
