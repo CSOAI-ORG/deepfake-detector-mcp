@@ -1,0 +1,59 @@
+{
+  "name": "deepfake-detector-mcp",
+  "description": "Deepfake Detector MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/deepfake-detector-mcp.html",
+  "version": "1.0.10",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "detect_deepfake",
+      "name": "Detect Deepfake",
+      "description": "detect_deepfake via deepfake-detector-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_audio_authenticity",
+      "name": "Analyze Audio Authenticity",
+      "description": "analyze_audio_authenticity via deepfake-detector-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_image_provenance",
+      "name": "Check Image Provenance",
+      "description": "check_image_provenance via deepfake-detector-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_authenticity_report",
+      "name": "Generate Authenticity Report",
+      "description": "generate_authenticity_report via deepfake-detector-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

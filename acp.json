@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "deepfake-detector-mcp",
+    "description": "Deepfake Detector MCP Server by MEOK AI Labs",
+    "version": "1.0.10",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "deepfake-detector-mcp"
+      }
+    ],
+    "capabilities": [
+      "detect_deepfake",
+      "analyze_audio_authenticity",
+      "check_image_provenance",
+      "generate_authenticity_report"
+    ]
+  }
+}
