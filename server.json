@@ -4,9 +4,8 @@
   "version": "1.0.13",
   "description": "Deepfake Detector MCP Server by MEOK AI Labs",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/deepfake-detector-mcp",
-    "source": "https://github.com/CSOAI-ORG/deepfake-detector-mcp"
+    "source": "github"
   },
   "packages": [
     {
