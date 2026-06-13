@@ -1,0 +1,100 @@
+{
+  "name": "Deepfake Detector Mcp",
+  "version": "1.0.10",
+  "url": "https://mcp.meok.ai/deepfake-detector-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "AI-powered deepfake detector MCP server for agents. Supports detect deepfake, analyze audio authenticity, check image provenance. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "detect_deepfake",
+      "name": "Detect Deepfake",
+      "description": "Detect Deepfake — a tool of the deepfake-detector-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "analyze_audio_authenticity",
+      "name": "Analyze Audio Authenticity",
+      "description": "Analyze Audio Authenticity — a tool of the deepfake-detector-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_image_provenance",
+      "name": "Check Image Provenance",
+      "description": "Check Image Provenance — a tool of the deepfake-detector-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "generate_authenticity_report",
+      "name": "Generate Authenticity Report",
+      "description": "Generate Authenticity Report — a tool of the deepfake-detector-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "deepfake-detector-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
